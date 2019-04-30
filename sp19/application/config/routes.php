@@ -51,10 +51,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+//routes for pics:
+$route['pics/(:any)'] = 'pics/$1';
+$route['pics'] = 'pics';
+
 //routes for our news model
 $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
+
 
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
