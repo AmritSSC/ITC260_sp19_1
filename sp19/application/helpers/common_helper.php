@@ -115,16 +115,23 @@ if(!function_exists('bootswatchFeedback'))
 
 if (!function_exists('makeLinks')){
     
+    //function makeLinks(){
+    
+    
     function makeLinks($nav){
-        
+
         $myReturn = '';
-        
-        foreach ($nav as $key=> $value){
-            
-            $myReturn .= '<li><a href"' . $key . '">' . $value . '</a> </li>' . PHP_EOL;
+
+        foreach ($nav as $key => $value){
+
+            $myReturn .= '<li><a href="' . $key . '">' . $value . '</a> </li>' . PHP_EOL;
         }
+
+        return $myReturn;
+
         //var_dump($nav);
         //die;
+        
         // return 'is this working?';
     }
    

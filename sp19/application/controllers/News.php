@@ -17,7 +17,7 @@ class News extends CI_Controller {
         
         $nav1 = $this->config->item('nav1');
         
-        // var_dump($nav1);
+        //var_dump($nav1);
         //die;
         
         $data['news'] = $this->news_model->get_news();
