@@ -7,7 +7,7 @@ $config['title'] = 'Default Title';
 $config['copyright'] = 'Default Copyright';
 $config['masthead'] = 'Default MastHead';
 $config['theme'] = 'themes/bootswatch/';
-$config['flickrKey'] = 'TEST';
+$config['flickrKey'] = '4aff89e5ba655df8b5e1cf50baf473ce';
 
 
 

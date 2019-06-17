@@ -11,6 +11,10 @@ class Pics_model extends CI_Model {
     public function get_pics($tags = FALSE)
     {
         $api_key = $this->config->item('flickrKey');
+        /*
+        var_dump($api_key);
+        die();
+        */
         
         // SHOULD BE PASSED IN BY A QUERYSTRING/CONTROLLER
         //$tags = 'mariners';
@@ -24,6 +28,8 @@ class Pics_model extends CI_Model {
         $url.= '&nojsoncallback=1';
 
         $response = json_decode(file_get_contents($url));
+//        var_dump($response);
+//        die();
         return $response->photos->photo;
     }
 }
